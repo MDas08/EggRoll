@@ -6,7 +6,7 @@ import { TiMicrophone } from "react-icons/ti";
 import Vector from "../icons/Vector.svg";
 import Copy from "../icons/copy.svg";
 import Clear from "../icons/clearpage.svg";
-import StopRec from "../icons/stoprec.svg";
+import StopRec from "../icons/stoprecfinal.svg";
 const Recorder = () => {
   let text =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum ea sint, ex neque nam possimus quisquam pariatur rem autem enim blanditiis veritatis similique fuga incidunt veniam eaque, atque aut suscipit nihil unde necessitatibus? Facere ea iusto dignissimos magnam libero, nisi vero? Nam illum consequatur dignissimos autem a adipisci explicabo quae reprehenderit amet dolores corrupti natus in minus debitis, quas modi aliquam ab. Recusandae hic eaque quis quisquam perspiciatis, nesciunt labore sunt dolorem facilis tempore corporis amet consequatur veniam cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum ea sint, ex neque nam possimus quisquam pariatur rem autem enim blanditiis veritatis similique fuga incidunt veniam eaque, atque aut suscipit nihil unde necessitatibus? Facere ea iusto dignissimos magnam libero, nisi vero? Nam illum consequatur dignissimos autem a adipisci explicabo quae reprehenderit amet dolores corrupti natus in minus debitis, quas modi aliquam ab. Recusandae hic eaque quis quisquam perspiciatis, nesciunt labore sunt dolorem facilis tempore corporis amet consequatur veniam cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum ea sint, ex neque nam possimus quisquam pariatur rem autem enim blanditiis veritatis similique fuga incidunt veniam eaque, atque aut suscipit nihil unde necessitatibus? Facere ea iusto dignissimos magnam libero, nisi vero? Nam illum consequatur dignissimos autem a adipisci explicabo quae reprehenderit amet dolores corrupti natus in minus debitis, quas modi aliquam ab. Recusandae hic eaque quis quisquam perspiciatis, nesciunt labore sunt dolorem facilis tempore corporis amet consequatur veniam cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum ea sint, ex neque nam possimus quisquam pariatur rem autem enim blanditiis veritatis similique fuga incidunt veniam eaque, atque aut suscipit nihil unde necessitatibus? Facere ea iusto dignissimos magnam libero, nisi vero? Nam illum consequatur dignissimos autem a adipisci explicabo quae reprehenderit amet dolores corrupti natus in minus debitis, quas modi aliquam ab. Recusandae hic eaque quis quisquam perspiciatis, nesciunt labore sunt dolorem facilis tempore corporis amet consequatur veniam cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum ea sint, ex neque nam possimus quisquam pariatur rem autem enim blanditiis veritatis similique fuga incidunt veniam eaque, atque aut suscipit nihil unde necessitatibus? Facere ea iusto dignissimos magnam libero, nisi vero? Nam illum consequatur dignissimos autem a adipisci explicabo quae reprehenderit amet dolores corrupti natus in minus debitis, quas modi aliquam ab. Recusandae hic eaque quis quisquam perspiciatis, nesciunt labore sunt dolorem facilis tempore corporis amet consequatur veniam cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum ea sint, ex neque nam possimus quisquam pariatur rem autem enim blanditiis veritatis similique fuga incidunt veniam eaque, atque aut suscipit nihil unde necessitatibus? Facere ea iusto dignissimos magnam libero, nisi vero? Nam illum consequatur dignissimos autem a adipisci explicabo quae reprehenderit amet dolores corrupti natus in minus debitis, quas modi aliquam ab. Recusandae hic eaque quis quisquam perspiciatis, nesciunt labore sunt dolorem facilis tempore corporis amet consequatur veniam cum.";
@@ -17,6 +17,14 @@ const Recorder = () => {
       <div className="auto-save">
         <input type="checkbox" name="" id="" className="checkbox" />
         Auto Save
+      </div>
+      <div className="language">
+        <select name="" id="" className="languages">
+          <option value="">English,US</option>
+          <option value="">English,UK</option>
+          <option value="">German</option>
+          <option value="">Spanish</option>
+        </select>
       </div>
       <div className="main-body">
         <div className="clear-text">
@@ -69,7 +77,7 @@ const Recorder = () => {
                       setIsRec(false);
                     }}
                   >
-                    <img src={StopRec} alt="" />
+                    <img src={StopRec} alt="" className="stop-logo" />
                   </button>
                 )}
               </div>

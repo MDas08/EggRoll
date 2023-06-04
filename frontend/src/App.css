@@ -69,13 +69,15 @@
 .text-box {
   width: 80%;
   height: 60vh;
-  border: 2px solid rgb(255, 106, 0);
-  border-radius: 10px;
-  font-weight: 100;
+  border: 2.08455px solid rgb(255, 106, 0);
+  border-radius: 20px;
+  font-weight: 400;
   color: black;
   background-color: #f4f4f4;
   margin: 3vh;
   overflow: scroll;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
 }
 .auto-save {
   position: relative;
@@ -84,11 +86,26 @@
   font-family: "Poppins", sans-serif;
   padding: 10px;
 }
+.languages {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: #1e1e1e;
+  border: 0.5px solid #ff7138;
+  border-radius: 20px;
+  transform: translateX(35vw);
+}
+option {
+  color: #ffffff;
+}
 .checkbox {
   padding-right: 10px;
 }
 .recorder {
   background-color: #1e1e1e;
+}
+.stop-logo {
+  width: 40px;
 }
 /* @font-face {
   font-family: 'button-icons';
@@ -361,6 +378,7 @@
 .social-logo {
   width: auto;
   height: 40px;
+  padding: 10px;
 }
 @media (max-width: 640px) {
   .record-btn,
