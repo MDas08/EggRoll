@@ -8,10 +8,9 @@ import Copy from "../icons/copy.svg";
 import Clear from "../icons/clearpage.svg";
 import StopRec from "../icons/stoprecfinal.svg";
 const Recorder = () => {
-  let text =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum ea sint, ex neque nam possimus quisquam pariatur rem autem enim blanditiis veritatis similique fuga incidunt veniam eaque, atque aut suscipit nihil unde necessitatibus? Facere ea iusto dignissimos magnam libero, nisi vero? Nam illum consequatur dignissimos autem a adipisci explicabo quae reprehenderit amet dolores corrupti natus in minus debitis, quas modi aliquam ab. Recusandae hic eaque quis quisquam perspiciatis, nesciunt labore sunt dolorem facilis tempore corporis amet consequatur veniam cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum ea sint, ex neque nam possimus quisquam pariatur rem autem enim blanditiis veritatis similique fuga incidunt veniam eaque, atque aut suscipit nihil unde necessitatibus? Facere ea iusto dignissimos magnam libero, nisi vero? Nam illum consequatur dignissimos autem a adipisci explicabo quae reprehenderit amet dolores corrupti natus in minus debitis, quas modi aliquam ab. Recusandae hic eaque quis quisquam perspiciatis, nesciunt labore sunt dolorem facilis tempore corporis amet consequatur veniam cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum ea sint, ex neque nam possimus quisquam pariatur rem autem enim blanditiis veritatis similique fuga incidunt veniam eaque, atque aut suscipit nihil unde necessitatibus? Facere ea iusto dignissimos magnam libero, nisi vero? Nam illum consequatur dignissimos autem a adipisci explicabo quae reprehenderit amet dolores corrupti natus in minus debitis, quas modi aliquam ab. Recusandae hic eaque quis quisquam perspiciatis, nesciunt labore sunt dolorem facilis tempore corporis amet consequatur veniam cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum ea sint, ex neque nam possimus quisquam pariatur rem autem enim blanditiis veritatis similique fuga incidunt veniam eaque, atque aut suscipit nihil unde necessitatibus? Facere ea iusto dignissimos magnam libero, nisi vero? Nam illum consequatur dignissimos autem a adipisci explicabo quae reprehenderit amet dolores corrupti natus in minus debitis, quas modi aliquam ab. Recusandae hic eaque quis quisquam perspiciatis, nesciunt labore sunt dolorem facilis tempore corporis amet consequatur veniam cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum ea sint, ex neque nam possimus quisquam pariatur rem autem enim blanditiis veritatis similique fuga incidunt veniam eaque, atque aut suscipit nihil unde necessitatibus? Facere ea iusto dignissimos magnam libero, nisi vero? Nam illum consequatur dignissimos autem a adipisci explicabo quae reprehenderit amet dolores corrupti natus in minus debitis, quas modi aliquam ab. Recusandae hic eaque quis quisquam perspiciatis, nesciunt labore sunt dolorem facilis tempore corporis amet consequatur veniam cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum ea sint, ex neque nam possimus quisquam pariatur rem autem enim blanditiis veritatis similique fuga incidunt veniam eaque, atque aut suscipit nihil unde necessitatibus? Facere ea iusto dignissimos magnam libero, nisi vero? Nam illum consequatur dignissimos autem a adipisci explicabo quae reprehenderit amet dolores corrupti natus in minus debitis, quas modi aliquam ab. Recusandae hic eaque quis quisquam perspiciatis, nesciunt labore sunt dolorem facilis tempore corporis amet consequatur veniam cum.";
+  let text;
   const [isRec, setIsRec] = useState(false);
-  const [boxtext, setText] = useState(text);
+  const [boxtext, setText] = useState("nothing yet");
   const handleSave = async () => {
     const audiofile = new File([audioBlob], "audiofile.webm", {
       type: "audio/webm",
@@ -102,7 +101,7 @@ const Recorder = () => {
           />
         </div>
       </div>
-      <form action="">
+      <form action="http://localhost:5000/form">
         <input type="file" name="file"></input>
         <button type="submit">Submit</button>
       </form>
