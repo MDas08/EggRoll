@@ -14,23 +14,13 @@ const AboutUs = () => {
         <div className="container2">
           <img src={Book} alt="" className="book" />
           <p className="centered">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id in
-            labore non necessitatibus nostrum, facilis, ipsam, quis placeat
-            doloremque nisi minima eaque quas esse et veritatis suscipit
-            consequatur vitae. Nam assumenda optio, saepe id at rerum.
-            Aspernatur at voluptatibus omnis obcaecati? Consequatur, deleniti.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-            expedita magni amet saepe sint omnis dolorum aut at rem eos,
-            doloribus libero. Veritatis doloribus tempore in ratione quaerat ad
-            magnam architecto, pariatur laboriosam dolores nobis saepe minima,
-            sed aperiam accusamus eligendi dicta repellat ullam voluptatibus!
-            Error quos numquam consectetur fuga quas dolor possimus modi
-            reprehenderit, sequi corporis eos ad facilis esse ratione, velit
-            autem consequatur, rem expedita dolore iure! Modi, deserunt velit
-            minima, repellendus dolorum corporis vel perferendis ipsum dolores
-            asperiores numquam? Ut labore temporibus qui placeat vitae neque
-            dolor, ullam ab praesentium fugiat? Unde enim quos libero tenetur
-            optio!
+            We're 4 college students who have been through some tough classes,
+            so we wanted to make a website that makes them easier for us. Often
+            we'll have days that we just don't feel like making notes or the
+            teacher is going too fast for us. So we created EggRoll to make the
+            notes for us. EggRoll is your new notes-buddy who will record your
+            lectures and make notes, so you don't have to worry about missing
+            something while studying!
           </p>
         </div>
       </div>
