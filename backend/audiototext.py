@@ -12,6 +12,6 @@ def getText(audio):
     try:
         r=sr.Recognizer()
         text=r.recognize_google(audio)
-        print("The Text:", text)
+        return text
     except:
         print('No audio')
