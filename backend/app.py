@@ -5,7 +5,7 @@ from audiototext import *
 
 app = Flask(__name__)
 
-@app.route('/', methods=["POST"], strict_slashes=False)
+@app.route('/form', methods=["POST"], strict_slashes=False)
 def index():
     file = request.files['file']
     text = getText(file)
