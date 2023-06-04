@@ -133,7 +133,9 @@ const Recorder = () => {
       </div>
       <form action="http://localhost:5000/form" method="POST" onSubmit={handleSubmit}>
         <input type="file" name="file"></input>
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit-btn" value="Submit">
+          Submit
+        </button>
       </form>
     </div>
   );
