@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ReactMediaRecorder } from "react-media-recorder";
 import "../App.css";
 import MicIcon from "../icons/mic.jpg";
@@ -7,25 +7,55 @@ import Vector from "../icons/Vector.svg";
 import Copy from "../icons/copy.svg";
 import Clear from "../icons/clearpage.svg";
 import StopRec from "../icons/stoprecfinal.svg";
+import axios from "axios";
 const Recorder = () => {
   let text;
   const [isRec, setIsRec] = useState(false);
   const [boxtext, setText] = useState("nothing yet");
-  const handleSave = async () => {
-    const audiofile = new File([audioBlob], "audiofile.webm", {
-      type: "audio/webm",
-    });
 
-    console.log(audiofile);
+  // npm install axios
+  // Crt + C to stop the server
+  // Also like when you type 'fron' you can press tab and it'll autocomplete
 
-    const formData = new FormData();
+  // const handleSave = async () => {
+  //   const audiofile = new File([audioBlob], "audiofile.webm", {
+  //     type: "audio/webm",
+  //   });
 
-    formData.append("file", audiofile);
+  //   console.log(audiofile);
 
-    const result = await axios.post(`<your server post end point>`, formData, {
-      crossDomain: true,
-    });
+  //   const formData = new FormData();
+
+  //   formData.append("file", audiofile);
+
+  //   const result = await axios.post(`<your server post end point>`, formData, {
+  //     crossDomain: true,
+  //   });
+  // };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    
+    try {
+      axios.defaults.baseURL = 'http://localhost:5000';
+      axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+      const formData = new FormData(event.target);
+      axios.post('/form', formData, { headers: { 'Content-Type': 'multipart/form-data' } })
+        .then(response => {
+          const receivedValue = response.data;
+          setText(receivedValue)
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+      
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
+  
+
+ 
   return (
     <div className="recorder">
       <div className="auto-save">
@@ -101,7 +131,7 @@ const Recorder = () => {
           />
         </div>
       </div>
-      <form action="http://localhost:5000/form" method="POST">
+      <form action="http://localhost:5000/form" method="POST" onSubmit={handleSubmit}>
         <input type="file" name="file"></input>
         <button type="submit" className="submit-btn" value="Submit">
           Submit
