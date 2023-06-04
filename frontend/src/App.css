@@ -1,0 +1,373 @@
+@import url("https://fonts.cdnfonts.com/css/brandon-printed");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header {
+  height: 12vh;
+  font-size: 1.5rem;
+  background: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.small {
+  font-size: 20px;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  display: inline-flex;
+}
+.top-left h2 {
+  color: #ff7138;
+  padding-left: 15px;
+  font-family: "Branden Printed";
+  font-weight: 400;
+}
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.list {
+  font-size: 20px;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 15px;
+  cursor: pointer;
+  height: 24px;
+  left: 722px;
+  top: 26px;
+  font-family: "Inter", sans-serif;
+}
+.main-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-box {
+  width: 80%;
+  height: 60vh;
+  border: 2px solid rgb(255, 106, 0);
+  border-radius: 10px;
+  font-weight: 100;
+  color: black;
+  background-color: #f4f4f4;
+  margin: 3vh;
+  overflow: scroll;
+}
+.auto-save {
+  position: relative;
+  left: -35%;
+  top: 34px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+.checkbox {
+  padding-right: 10px;
+}
+.recorder {
+  background-color: #1e1e1e;
+}
+/* @font-face {
+  font-family: 'button-icons';
+  src: url(./icons/mic.jpg);
+  font-weight: normal;
+  font-style: normal;
+}
+.rec-icon::before{
+  font-family: 'button-icons';
+  content: "\e701";
+} */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.record-btn {
+  border: 2px solid #414141;
+  border-radius: 50%;
+  background: #414141;
+  width: 10vw;
+  height: 15vh;
+  font-size: 2rem;
+  padding: 10px;
+  width: 5vw;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+.stop-btn {
+  border: 2px solid #ff7138;
+  border-radius: 50%;
+  background: #ff7138;
+  width: 10vw;
+  height: 15vh;
+  font-size: 2rem;
+  padding: 10px;
+  width: 5vw;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+.howto {
+  background-color: #1e1e1e;
+}
+.title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.15em;
+  text-align: center;
+  padding: 20px;
+}
+.usetitle {
+  color: #ff7138;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e;
+}
+.content {
+  background-color: #1e1e1e;
+  width: 60vw;
+  height: 60vh;
+  border: 0.74px solid #ff7138;
+  border-radius: 20px;
+}
+.howtoline1 {
+  transform: translate(169px, -50px);
+}
+.howtoline2 {
+  transform: translate(119px, -57px);
+}
+.AboutUs {
+  background-color: #1e1e1e;
+}
+.projdesc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15vw;
+}
+.container2 {
+  width: 30vw;
+  height: 100vh;
+  background: transparent;
+  border: 2px solid #ff7138;
+  border-radius: 20px;
+}
+.book {
+  transform: translateY(-10px);
+}
+.project {
+  font-family: "Branden Printed";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 70px;
+  letter-spacing: 0.15em;
+  text-align: center;
+  -webkit-text-stroke: #ff7138;
+  background-color: #1e1e1e;
+  color: #ff7138;
+}
+.copy-btn {
+  background-color: transparent;
+  transform: translateX(40vw);
+  cursor: pointer;
+}
+.clear-text {
+  transform: translate(-528px, 43px);
+  cursor: pointer;
+}
+.description {
+  font-family: Branden Printed;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+.Demo-vid {
+  background-color: #1e1e1e;
+}
+.demo-title {
+  position: relative;
+  height: 44px;
+  width: 80vw;
+  font-size: 35px;
+  letter-spacing: 10px;
+  transform: translateX(10vw);
+  font-family: "Branden Printed";
+}
+.demo-circle {
+  transform: translate(99px, -69px);
+}
+.vid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vid {
+  height: 339px;
+  width: 678px;
+  left: 189px;
+  top: 2301px;
+  border-radius: 40px;
+  border: 4px solid #ff7138;
+  background-color: #f4f4f4;
+}
+.team {
+  background-color: #1e1e1e;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 30px 0 30px;
+}
+.roles {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 12px;
+  font-family: Neuton;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.15em;
+  text-align: left;
+}
+.card-item,
+.card-item img {
+  height: 250px;
+  width: 200px;
+  left: 66px;
+  top: 2920px;
+  border-radius: 20px;
+  background: #ffffff;
+  flex-wrap: row;
+}
+.star-small {
+  transform: translate(-113px, -29px);
+}
+.team-sparkles {
+  transform: translateX(150px);
+}
+.card-text {
+  font-family: "Neuton", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+.card-text2 {
+  font-size: 10px;
+  font-weight: 100;
+  position: relative;
+  bottom: 0;
+  right: 40px;
+  /*   position: inherit;
+  top: 0;
+  transform:translate(-100px,-33px);
+  padding-left: 20px;
+  font-family: 'Neuton';
+  font-size: 10px;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 0.15em;
+  text-align: left;
+   */
+}
+.team-span {
+  font-family: "Neuton", serif;
+  color: #ff7138;
+}
+.r1 {
+  transform: translate(-13px);
+}
+.t2 {
+  transform: translateX(40px);
+}
+.r2 {
+  transform: translateX(-48px);
+}
+.t3 {
+  transform: translateX(10px);
+}
+.r3 {
+  transform: translate(-47px);
+}
+.t4 {
+  transform: translate(-30px);
+}
+.r4 {
+  transform: translate(-55px);
+}
+.footer {
+  background-color: #ff7138;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footer h5 {
+  text-align: left;
+  padding: 30px;
+}
+.footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.options {
+  display: inline-flex;
+  cursor: pointer;
+}
+.contact p {
+  font-weight: normal;
+  text-align: left;
+  padding-left: 25px;
+  font-size: 16px;
+}
+.social-logo {
+  width: auto;
+  height: 40px;
+}
+@media (max-width: 640px) {
+  .record-btn,
+  .stop-btn {
+    width: 20vw;
+  }
+  .header {
+    font-size: 30px;
+  }
+}
