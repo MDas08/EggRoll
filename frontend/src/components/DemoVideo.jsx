@@ -10,7 +10,7 @@ const DemoVideo = () => {
       </div>
       <div className="vid-container">
         <div className="vid">
-          <video src=""></video>
+          <video src="https://www.youtube.com/watch?v=27lATr52hLE"></video>
         </div>
       </div>
     </div>
