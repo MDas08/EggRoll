@@ -8,8 +8,9 @@
   box-sizing: border-box;
   color: white;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
 .header {
   height: 12vh;
   font-size: 1.5rem;
@@ -30,7 +31,7 @@
 .top-left h2 {
   color: #ff7138;
   padding-left: 15px;
-  font-family: "Branden Printed";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 .top-right {
@@ -44,6 +45,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-family: "Poppins", sans-serif;
 }
 .list {
   font-size: 20px;
@@ -183,6 +185,8 @@ option {
   height: 60vh;
   border: 0.74px solid #ff7138;
   border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 .howtoline1 {
   transform: translate(169px, -50px);

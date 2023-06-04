@@ -95,7 +95,7 @@ const Recorder = () => {
                     <img src={StopRec} alt="" className="stop-logo" />
                   </button>
                 )}
-                <video src={mediaBlobUrl} controls autoPlay loop />
+                <video src={mediaBlobUrl} controls autoPlay />
               </div>
             )}
           />

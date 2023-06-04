@@ -24,7 +24,12 @@ function App() {
       <div className="header">
         <div className="top-left">
           <img src={Logo} alt="" className="logo" />
-          <h2>EGGROLL</h2>
+          <h2
+            className="main-title
+          "
+          >
+            EGGROLL
+          </h2>
         </div>
         <ul>
           <div className="top-right">
